@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        輸入：<input class="inputtext" type="text" value="123"><br>
+        <label>男<input type="radio" name="gender" value="1" checked></label>
+        <label>女<input type="radio" name="gender" value="2"></label>
+        <label>其他<input type="radio" name="gender" value="3"></label>
+    </form>
+    <script>
+        console.log(document.querySelector(".inputtext"))
+        console.log(document.querySelector(".inputtext").value);
+    </script>
+
+</body>
+
+</html>

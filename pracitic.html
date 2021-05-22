@@ -1,0 +1,50 @@
+<!-- 題目 :
+我是政府，要來辦一個補助案
+這次的補助案有分三類
+第一類是補助五千元
+第二類補助三千元
+第三類補助一千元
+另外第一類如果有碩士學歷證明的話就多給一千元
+最後幫我顯示出補助款為多少錢 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var lowType; //補助類別
+       var amount = 0; //補助款加總
+       var edu  = true; //碩士學歷 
+    
+       lowType=1;//假設為第一類
+       edu = true;
+
+    //    判斷
+       if(lowType =="1"){
+           amount=5000;
+            if(edu===true){
+                amount+=1000;
+            }
+       }else if(lowType =="2"){
+           amount=3000;
+        //    if(edu===true){
+        //         amount=amount+1000;
+        //    }    
+       }else if (lowType =="3"){
+           amount=1000;
+    //        if(edu===true){
+    //             amount+=1000;}
+       }
+       else{
+           console.log('沒這個類別');
+       }
+       document.write(`補助款為${amount}`);
+
+    </script>
+</body>
+</html>

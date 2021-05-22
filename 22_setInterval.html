@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="divNum" style="
+    color:rgb(255, 255, 255);
+    width:300px;
+    height:150px;
+    background-color:#333;
+    font-size:50px;
+    text-align:center;">5
+    </div>
+    <script>
+        var num = 5;//1.設一個變數，我要從5開始倒數
+        var timerId;//2.設一個變數，準備啟動或取消我的計時器
+
+        //5.設置每一秒要做什麼事情的function
+        function countDown() {
+            num--; //6.先將倒數減一
+
+            if (num == 0) { //8.數數到0的時候就是最後了!
+                num = "Happy new year~~";//9.0的時候要渲染新年快樂
+                clearInterval(timerId);//10.0的時候不用再有計時器了，清掉
+            }
+
+            // 7.減一之後我要渲染到頁面上
+            document.querySelector("#divNum").innerText = num;
+        }
+
+        //3. 設置一個function，啟動計時器
+        function init() {
+            timerId = setInterval(countDown, 1000);
+        }
+        init();//4.呼叫設計計時器的function
+    </script>
+</body>
+
+</html>

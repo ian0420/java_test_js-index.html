@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="root">idname取在重要的東西上，ID我們˙讓他唯一</div>
+    <div class=".class_name">單一個class</div>
+    <div class=".class_name">單2個class</div>
+    <div class=".class_name">單3個class</div> -->
+
+    <form>
+        <label>男<input type="radio" name="gender" value="1" checked></label>
+        <label>女<input type="radio" name="gender" value="2"></label>
+        <label>其他<input type="radio" name="gender" value="3"></label>
+    </form>
+    <script>
+        // document.title = "JAVA";
+        // console.log(document.getElementById('root'));
+        // document.querySelector('#root').style.
+        //     color = 'red'
+        // // console.log(text);
+        // console.log(document.querySelectorAll(".class_name"))
+
+
+        // console.log(document.getElementsByClassName('byClassName')[0]);
+        // console.log(document.querySelectorAll('.byClassName')[0]);
+        // console.log(document.querySelector('.byClassName'));
+
+        console.log(document.getElementsByName('gender').length)
+        console.log(document.querySelectorAll("input[name='gender']").length)
+        console.log(document.querySelector("input[name='gender']:checked").value)//radio是單選!
+
+
+    </script>
+</body>
+
+</html>

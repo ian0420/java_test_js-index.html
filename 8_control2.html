@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (var i = 1; i<=3 ;i++){
+            document.write('I love JavaScript'+"<br>");
+        }
+        for (var i = 1; i <= 3; i++) {
+        document.write("第一層", i, "<br>");
+            for (var k = 1; k <= 3; k++) {
+            document.write("&nbsp&nbsp&nbsp第二層", k, "<br>");
+            // nbsp不換行空格
+  }
+}
+document.write("<table>");
+
+    for (var i = 1; i <= 4; i++) {
+
+         document.write("<tr>");
+  
+            for (var k = 1; k <= 3; k++) {
+             document.write("<td>", "ヾ(・ω・ｏ)", "</td>");
+            }
+  
+            document.write("</tr>");
+  
+            }
+
+            document.write("</table>");
+
+            // 題目 : do…while摸彩金
+            // 有11顆彩球, 彩球面額為0-10之間, 若摸到的彩球不為0,則可繼續摸彩,
+            // 若摸到的彩球為0,則停止摸彩,並計算其摸彩次數及彩金總金額(單位:佰元)
+            // (假設抽到1就是100元)
+
+
+            
+            var time = 0; //次數
+            var total =0; //彩金總金額
+            do{
+                var x = Math.floor(Math.random()*11)*100;
+                document.write('抽'+x+"<br>");
+                time++;
+                // total = total + x;
+                total += x ;
+
+            }while(x!==0);
+            document.write("總價"+total+"<br>","總次數:"+time);
+
+            
+
+
+
+
+    </script>
+</body>
+</html>
