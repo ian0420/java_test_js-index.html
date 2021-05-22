@@ -1,1 +1,0 @@
-document.write('我在JS檔裡面');
